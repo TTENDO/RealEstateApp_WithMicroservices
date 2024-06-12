@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstateApp.API\RealEstateApp.API.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Application\RealEstateApp.Application.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Domain\RealEstateApp.Domain.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Infrastructure\RealEstateApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Services.NotificationService\RealEstateApp.Services.NotificationService.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Services.PropertyService\RealEstateApp.Services.PropertyService.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Services.UserService\RealEstateApp.Services.UserService.csproj" />
+    <ProjectReference Include="..\RealEstateApp.Web\RealEstateApp.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>
