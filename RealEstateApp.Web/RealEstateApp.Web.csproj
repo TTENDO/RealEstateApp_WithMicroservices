@@ -10,4 +10,9 @@
     <ProjectReference Include="..\RealEstateApp.Application\RealEstateApp.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\assets\" />
+  </ItemGroup>
+
 </Project>
